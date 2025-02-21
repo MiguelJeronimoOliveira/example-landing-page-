@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="pixel.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <div id="logo">
+                <i class="fa-solid fa-book"> Logo</i>
+            </div>
+            <ul id="navItems">
+                <li></li><a href="#apresentacao">Se inscreva</a></li>
+                <li></li><a href="#informacoes">Mais informações</a></li>
+                <li></li><a href="#titulo">Nossos cursos</a></li>
+                <li></li><a href="#tituloDepoimento">Depoimentos</a></li>
+                <li></li><a href="#mapa">Onde estamos?</a></li>
+            </ul>
+
+            <a href="https://wa.me/5584981471478">
+                <button id="btnpadrao"><i class="fa-brands fa-whatsapp"></i> Nos contate</button>
+            </a>
+
+            <button id="mobilebtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div id="mobileMenu">
+            <ul id="mobileItems">
+                <li><a href="#apresentacao">Se inscreva</a></li>
+                <li><a href="#informacoes">Mais informações</a></li>
+                <li><a href="#titulo">Nossos cursos</a></li>
+                <li></li><a href="#tituloDepoimento">Depoimentos</a></li>
+                <li><a href="#mapa">Onde estamos?</a></li>
+            </ul>
+    </header>
+
+    <main id="content">
+        
+        <section id="apresentacao">
+            <div id="cta">
+                <h1>Seja bem-vindo!</h1>
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                Ad iusto voluptatibus ad assumenda explicabo vel quasi nostrum eum velit ipsum</p>
+                <img src="images/image1.png" alt="imagem gil do vigor comemorando">
+            </div>
+
+            <div id="formulario">
+                <div id="logoForm">
+                    <i class="fa-solid fa-book"> Logo</i>
+                </div>
+                <h1>Aqui, sua paixão vira profissão.</h1>
+                <form action="">
+                    <input type="text" placeholder="Seu nome">
+                    <input type="tel" placeholder="Seu telefone">
+                    <select id="course" required>
+                        <option value="" disabled selected>Selecione um curso</option>
+                        <option value="Programação">Programação</option>
+                        <option value="Design Gráfico">Design Gráfico</option>
+                        <option value="Marketing Digital">Marketing Digital</option>
+                        <option value="Redação">Redação</option>
+                        <option value="Idiomas">Idiomas</option>
+                    </select>
+                    <button>Inscreva-se agora!</button>
+                    <div id="termos">
+                        <input type="checkbox" id="termosUsuario">
+                        Concordo que os dados pessoais fornecidos acima serão utilizados para envio de conteúdo informativo, analítico e publicitário sobre produtos, serviços e assuntos gerais, nos termos da Lei Geral de Proteção de Dados.
+                    </div>
+                </form>
+            </div>
+
+        </section>
+            
+        <section id="informacoes">
+            <aside id="maisInformacoes">
+                <h2>Conheça o curso Profissionalizante em Cuidador de Idosos</h2>
+                <p>Profissional pronto para proporcionar ao idoso um envelhecimento mais ativo e saudável. No curso Nível A, você aprenderá técnicas de higiene, cuidados com a mente e corpo, exercícios e métodos de auxílio com a saúde e os desafios da terceira idade.</p>
+                <a href="https://wa.me/5584981471478">
+                    <button><i class="fa-brands fa-whatsapp"></i> Matricule-se pelo whatsapp</button>
+                </a>
+            </aside>
+
+            <aside id="imagemInformacoes">
+                <img src="images/image3.png" alt="gil do vigor formado">
+            </aside>
+            <a href="https://wa.me/5584981471478">
+                <button id="whatsappbtn"><i class="fa-brands fa-whatsapp"></i> Matricule-se pelo whatsapp</button>
+            </a>
+        </section>
+
+        <section class="titulo" id="titulo">
+                <h2>Nossos cursos</h2>
+                <h1>Conheça nossos cursos e se torne um profissional qualificado.</h1>
+        </section>
+
+        <section id="cursos">
+            <div class="curso">
+                <h3>Nome Curso</h3>
+
+                <img class="imagem" src="images/imagecurso.png" alt="foto de um engenhiro">
+
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda</p>
+            </div>
+
+            <div class="curso">
+                <h3>Nome Curso</h3>
+
+                <img class="imagem" src="images/image3.png" alt="foto de um engenhiro">
+
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda</p>
+            </div>
+
+            <div class="curso">
+                <h3>Nome Curso</h3>
+
+                <img class="imagem" src="images/advogado-png.webp" alt="foto de um engenhiro">
+
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda</p>
+            </div>
+
+            <div class="curso">
+                <h3>Nome Curso</h3>
+
+                <img class="imagem" src="images/arquiteta.webp" alt="foto de um engenhiro">
+
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda</p>
+            </div>
+
+            
+            <div class="curso">
+                <h3>Nome Curso</h3>
+
+                <img class="imagem" src="images/image3.png" alt="foto de um engenhiro">
+
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda</p>
+            </div>
+        </section>
+
+        <section class="titulo"  id="tituloDepoimento">
+                <h2>Depoimentos</h2>
+                <h1>Veja o que nossos alunos tem a dizer sobre nós.</h1>
+        </section>
+
+
+        <section id="depoimentos">
+            <aside id="formandoFoto">
+                <img src="images/f781c4_9a124b17394845ecbdbc0664231b527f~mv2.avif" alt="foto mulher formado apontando">
+            </aside>
+
+            <aside id="mensagemDepoimentos">
+                <div id="mensagensDepoimentos">
+                    <div class="depoimento">
+                        <div id="icone">
+                            <img class="icone" src="images/305988.png" alt="">
+                        </div>
+
+                        <div id="textoDepoimento" id="depoimento1">
+                            <h3>Nome Aluno</h3>
+                            <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                                Ad iusto voluptatibus ad assumenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="depoimento" id="depoimento2">
+                        <div id="icone">
+                            <img class="icone" src="images/305988.png" alt="">
+                        </div>
+
+                        <div id="textoDepoimento">
+                        <h3>Nome Aluno</h3>
+                        <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                            Ad iusto voluptatibus ad assumenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="depoimento" id="depoimento3">
+                        <div id="icone">
+                            <img class="icone" src="images/305988.png" alt="">
+                        </div>
+                        <div id="textoDepoimento">
+                        <h3>Nome Aluno</h3>
+                        <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                            Ad iusto voluptatibus ad assumenda.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="depoimentosMobile">
+            <div class="depoimento">
+                <div id="icone">
+                    <img class="icone" src="images/305988.png" alt="">
+                </div>
+
+                <div id="textoDepoimento" id="depoimento1">
+                    <h3>Nome Aluno</h3>
+                    <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                        Ad iusto voluptatibus ad assumenda.</p>
+                </div>
+            </div>
+
+            <div class="depoimento" id="depoimento2">
+                <div id="icone">
+                    <img class="icone" src="images/305988.png" alt="">
+                </div>
+
+                <div id="textoDepoimento">
+                <h3>Nome Aluno</h3>
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda.</p>
+                </div>
+            </div>
+
+            <div class="depoimento" id="depoimento3">
+                <div id="icone">
+                    <img class="icone" src="images/305988.png" alt="">
+                </div>
+                <div id="textoDepoimento">
+                <h3>Nome Aluno</h3>
+                <p>Lorem ipsum dolor sit amet. Qui asperiores impedit qui consequatur quia non dolor maiores in iste sint eum doloremque ipsum ut placeat provident.
+                    Ad iusto voluptatibus ad assumenda.</p>
+                </div>
+        </section>
+
+        <section id="mapa">
+            <div class="titulo"  "tituloMapa">
+                <h2>Saiba onde nos encontrar</h2>
+            </div>
+
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15932.704685822674!2d-35.2228933!3d-5.8214732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2552108889803%3A0xc323ba4ec9722b44!2sMar%C3%80vista%20Moda%20Praia%20e%20Casual!5e0!3m2!1spt-BR!2sbr!4v1695488453767!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+        </section>
+
+        <footer>
+
+            <div id="logo">
+                <i class="fa-solid fa-book"> Logo</i>
+            </div>
+
+            <div id="footerContato">
+                <p>Miguel Jeronimo</p>
+                <p> <i class="fa-brands fa-whatsapp"></i> Telefone: (84) 981471478</p>
+            </div>
+
+            <div>
+                <p>© copyright 2025, Miguel Jeronimo
+                    Todos os direitos reservados.</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

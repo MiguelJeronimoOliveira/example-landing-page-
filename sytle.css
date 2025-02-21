@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header */
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 3;
+}
+
+h2, h1{
+    padding-bottom: 20px;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#logo {
+    color: #011945;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#navItems a {
+    text-decoration: none;
+    color: #011945;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#navItems a:hover {
+    color: #4b7dda;
+    transition: color 0.3s ease;
+}
+
+#btnpadrao {
+    border: none;
+    background-color: #25d366;
+    color: white;
+    border-radius: 12px;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#btnpadrao:hover {
+    background-color: #08963c;
+    transition: background-color 0.3s ease;
+}
+
+#mobilebtn {
+    display: none;
+}
+
+#mobileMenu {
+    display: none;
+}
+
+@media screen and (max-width: 1063px) {
+    #mobilebtn {
+        display: block;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #imagemInformacoes button{
+        display: block;
+        align-items: center;
+    }
+
+    #navItems a,
+    #btnpadrao {
+        display: none;
+    }
+
+    #mobileMenu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    #mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 15px;
+    }
+
+    #mobileMenu a {
+        text-decoration: none;
+        color: #011945;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
+    /* main responsivo*/
+
+    #apresentacao{
+        min-height: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #cta{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    /* mais informacoes responsivo */
+
+    #informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: none;
+    }
+
+    #maisInformacoes button{
+        display: none;
+    }
+
+}
+
+/*main */
+
+section {
+    padding: 28px 8%;
+}
+
+#apresentacao {
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+#apresentacao h1{
+    color: #024c9c;
+}
+
+#cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px auto;
+}
+
+/* Estilo do container do formulário */
+#formulario {
+    width: 100%;
+    height: 515px;
+    max-width: 500px; /* Limita o tamanho do formulário */
+    margin: 28px 8%; /* Centraliza o formulário na página */
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#termos{
+    padding-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+#termosUsuario{
+    width: 55px;
+    height: 55px;   
+}
+
+#formulario h1 {
+    padding-left: 40px;
+}
+
+#logoForm{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os inputs verticalmente */
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+/* Estilo dos campos de entrada */
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Cantos arredondados */
+    outline: none; /* Remove o contorno padrão */
+    transition: border-color 0.3s ease; /* Animação na borda */
+}
+
+/* Efeito ao focar nos campos */
+input:focus {
+    border-color: #007BFF; /* Borda azul ao focar */
+}
+
+select{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo do botão */
+#apresentacao button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007BFF; /* Azul como cor principal */
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Animação no hover */
+}
+
+#apresentacao button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Mais informacoes*/
+
+#informacoes{
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+#maisInformacoes{
+    width: 50%;
+    text-align: center;
+    padding-top: 155px;
+    font-size: 1.5rem;
+}
+
+#maisInformacoes h2{
+    color: #024c9c;
+}
+
+#maisInformacoes p{
+    color:#011945;
+}
+
+#imagemInformacoes{
+    background-color: #007BFF;
+    border-radius: 300px;
+}
+
+#whatsappbtn{
+    display: none;
+}
+
+#maisInformacoes button{
+    border: none;
+    background-color: #25d366;
+    color: white;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+#maisInformacoes button:hover{
+    background-color: #08963c;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1063px) {
+    #whatsappbtn{
+        display: block;
+        border: none;
+        background-color: #25d366;
+        color: white;
+        height: 40px;
+        width: 300px;
+        border-radius: 30px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #whatsappbtn:hover{
+        background-color: #4b7dda;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    #cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+    footer{
+        padding: 0;
+        font-size: 18px;
+        gap: 50px;
+    }
+
+    
+
+    
+}
+
+/*Cursos*/
+
+.titulo{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.titulo h2{
+    color: #024c9c;
+    font-size: 3rem;
+}
+
+#cursos{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(0, 0, 75);
+    display: flex;
+    align-items: space-between;
+    gap: 35px;
+}
+
+.curso{
+    background-color: #f9f9f9;
+    width: 320px;
+    height: 370px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 13px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.curso h3{
+    padding-top: 5px;
+    color: #024c9c;
+}
+
+.imagem{
+    width: 200px;
+    height: 200px;
+}
+
+.imagemcurso{
+    padding-bottom: 0%;
+}
+
+#depoimentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#formandoFoto{
+    height: 50%;
+}
+
+#tituloDepoimentos{
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    padding-right: 250px;
+}
+
+#tituloDepoimentos h2{
+    color: #024c9c;
+    font-size: 3rem;
+}
+
+.depoimento{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 120px;
+    align-items: center;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 1063px) {
+    #depoimentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formandoFoto{
+        display: none;
+    }
+
+    #mensagemDepoimentos{
+        display: none;
+    }
+
+    #textoDepoimento{
+        font-size: 15px;
+    }
+
+    #mapa{
+        text-align: center;
+    }
+    
+}
+
+
+.icone{
+    width: 65px;
+    height: 65px;
+}
+
+#mensagensDepoimentos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 30px;
+    border-radius: 30px;
+    font-size: 19px;
+}
+
+#textoDepoimento{
+    padding-left: 13px;
+}
+
+#depoimentosMobile{
+    display: none;
+}
+
+@media screen and (max-width: 1063px) {
+    #depoimentosMobile{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 0;
+    }
+}
+
+
+footer{
+    background-color: rgb(0, 0, 59);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+footer #logo{
+    color: white;
+}
+
